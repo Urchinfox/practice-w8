@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cart</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <script type="module" crossorigin src="/practice-w8/assets/main-d49fd770.js"></script>
+    <link rel="stylesheet" href="/practice-w8/assets/main-4842f25a.css">
+  </head>
+
+  <body class="bg-neutral-10">
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-light d-lg-block d-none">
+        <div class="container nav-bg-shadow py-4 px-8 rounded-5">
+          <a class="navbar-brand" href="index.html">
+            <img width="200" height="32" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/logo.png?raw=true" alt="...">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 border-1">
+              <li class="nav-item dropdown position-static ">
+                <a class="text-neutral-80" href="#"  id="dropdownMenuLink" data-bs-auto-close="outside" data-bs-toggle="dropdown" id="Test">
+                    探索 <span class="align-bottom material-symbols-outlined">
+                      keyboard_arrow_down
+                      </span>
+                  </a> 
+                  <div class="dropdown-menu desk-dropdown-menu p-0">
+                      <ul class="desk-dropdown-menu-first bg-neutral-10 dropdown-menu-scroll">
+                          <p class="py-3 px-4">探索全部</p>
+                          <li class="dropend position-static">
+                              <a class="active py-3 rounded-2 dropdown-item position-relative" href="#"  id="dropdownMenuLink" data-bs-auto-close="outside" data-bs-toggle="dropdown">程式
+                                  <span class="top-50 translate-middle-y end-0 position-absolute material-symbols-outlined"> chevron_right</span>
+                              </a>
+                              <div class="dropdown-menu">
+                                  <ul class=" desk-dropdown-menu-second">
+                                      <p class="py-3 px-4">所有程式</p>
+                           
+                                      <li>
+                                          <a class="py-3 rounded-2 dropdown-item position-relative" href="program.html" id="dropdownMenuLink" data-bs-auto-close="outside">程式入門
+                                              <span class="top-50 translate-middle-y end-0 position-absolute material-symbols-outlined"> chevron_right</span>
+                                          </a> 
+                                      </li>
+                                      <li class=" dropend position-static">
+                                          <a class="py-3 rounded-2 dropdown-item position-relative active" href="#" id="dropdownMenuLink" data-bs-auto-close="outside" data-bs-toggle="dropdown" data-bs-auto-close="outside">網頁前端
+                                              <span class="top-50 translate-middle-y end-0 position-absolute material-symbols-outlined"> chevron_right</span>
+                                          </a> 
+                                          <div class="dropdown-menu desk-dropdown-menu-third px-6 pt-6">
+                                              <h2 class="fs-7 text-neutral-80 pb-4 border-bottom border-1"><i class="bi bi-fire"></i> 熱門網頁前端課程</h2>
+
+                                              <div class="d-flex mt-4">
+                                                <div class="w-30 ">
+                                                    <div class="position-relative">
+                                                        <img width="100" height="100" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/course-5.png?raw=true" alt="...">
+                                                        <span class="discount"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="w-70 pb-6">
+                                                    <div class="d-flex flex-column">
+                                                        <h3 class="fs-7 mb-4"> 小白也會！從零開始學習 Python 程式設計</h3>
+                                                        <div class="d-flex justify-content-between mt-auto align-items-center border-1 border-bottom pb-2">
+                                                            <div>
+                                                                <img class="object-fit-cover" width="32" height="32" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/avatar-2.png?raw=true" alt="">
+                                                                <span class="neutral-80">Kelly Hsu</span>
+                                                            </div>
+                                                            <div class="text-end">
+                                                                <div class="text-primary-100 fw-bold">NT$ 2,480</div>
+                                                                <del class="del-text fs-9">NT$ 3,200</del>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between fs-8 align-items-center mt-2">
+                                                            <p class="text-neutral-80">已有 420 位同學加入</p>
+                                                            <p><i class="me-1 bi bi-star-fill"></i>4.0 <span class="del-text">(333)</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                              </div>
+
+                                              <div class="d-flex mt-4">
+                                                <div class="w-30 ">
+                                                    <div class="position-relative">
+                                                        <img width="100" height="100" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/course-5.png?raw=true" alt="...">
+                                                        <span class="discount"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="w-70 pb-6">
+                                                    <div class="d-flex flex-column">
+                                                        <h3 class="fs-7 mb-4"> 小白也會！從零開始學習 Python 程式設計</h3>
+                                                        <div class="d-flex justify-content-between mt-auto align-items-center border-1 border-bottom pb-2">
+                                                            <div>
+                                                                <img class="object-fit-cover" width="32" height="32" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/avatar-2.png?raw=true" alt="">
+                                                                <span class="neutral-80">Kelly Hsu</span>
+                                                            </div>
+                                                            <div class="text-end">
+                                                                <div class="text-neutral-60 fw-bold">已購買</div>
+                                                                <del class="del-text fs-9">NT$ 3,200</del>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between fs-8 align-items-center mt-2">
+                                                            <p class="text-neutral-80">已有 420 位同學加入</p>
+                                                            <p><i class="me-1 bi bi-star-fill"></i>4.0 <span class="del-text">(333)</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                              </div>
+
+                                              <div class="d-flex mt-4">
+                                                <div class="w-30 ">
+                                                    <div class="position-relative">
+                                                        <img width="100" height="100" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/course-5.png?raw=true" alt="...">
+                                                        <span class="discount"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="w-70 pb-6">
+                                                    <div class="d-flex flex-column">
+                                                        <h3 class="fs-7 mb-4"> 小白也會！從零開始學習 Python 程式設計</h3>
+                                                        <div class="d-flex justify-content-between mt-auto align-items-center border-1 border-bottom pb-2">
+                                                            <div>
+                                                                <img class="object-fit-cover" width="32" height="32" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/avatar-2.png?raw=true" alt="">
+                                                                <span class="neutral-80">Kelly Hsu</span>
+                                                            </div>
+                                                            <div class="text-end">
+                                                                <div class="text-primary-100 fw-bold">NT$ 2,480</div>
+                                                                <del class="del-text fs-9">NT$ 3,200</del>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between fs-8 align-items-center mt-2">
+                                                            <p class="text-neutral-80">已有 420 位同學加入</p>
+                                                            <p><i class="me-1 bi bi-star-fill"></i>4.0 <span class="del-text">(333)</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                              </div>
+
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <a class="py-3 rounded-2 dropdown-item position-relative" href="#" id="dropdownMenuLink" data-bs-auto-close="outside" data-bs-toggle="dropdown">網頁後端
+                                              <span class="top-50 translate-middle-y end-0 position-absolute material-symbols-outlined"> chevron_right</span>
+                                          </a> 
+                                      </li>
+                                      <li>
+                                          <a class="py-3 rounded-2 dropdown-item position-relative" href="#" id="dropdownMenuLink" data-bs-auto-close="outside" data-bs-toggle="dropdown">網站架設
+                                              <span class="top-50 translate-middle-y end-0 position-absolute material-symbols-outlined"> chevron_right</span>
+                                          </a> 
+                                      </li>
+                                      <li>
+                                          <a class="py-3 rounded-2 dropdown-item position-relative" href="#" id="dropdownMenuLink" data-bs-auto-close="outside" data-bs-toggle="dropdown">資訊安全
+                                              <span class="top-50 translate-middle-y end-0 position-absolute material-symbols-outlined"> chevron_right</span>
+                                          </a> 
+                                      </li>
+                                      <li>
+                                          <a class="py-3 rounded-2 dropdown-item position-relative" href="#" id="dropdownMenuLink" data-bs-auto-close="outside" data-bs-toggle="dropdown">程式語言
+                                              <span class="top-50 translate-middle-y end-0 position-absolute material-symbols-outlined"> chevron_right</span>
+                                          </a> 
+                                      </li>
+                                      <li>
+                                          <a class="py-3 rounded-2 dropdown-item position-relative" href="#" id="dropdownMenuLink" data-bs-auto-close="outside" data-bs-toggle="dropdown">遊戲開發
+                                              <span class="top-50 translate-middle-y end-0 position-absolute material-symbols-outlined"> chevron_right</span>
+                                          </a> 
+                                      </li>
+                                      <li>
+                                          <a class="py-3 rounded-2 dropdown-item position-relative" href="#" id="dropdownMenuLink" data-bs-auto-close="outside" data-bs-toggle="dropdown">資料科學
+                                              <span class="top-50 translate-middle-y end-0 position-absolute material-symbols-outlined"> chevron_right</span>
+                                          </a> 
+                                      </li>
+                                      <li>
+                                          <a class="py-3 rounded-2 dropdown-item position-relative" href="#" id="dropdownMenuLink" data-bs-auto-close="outside" data-bs-toggle="dropdown">人工智慧
+                                              <span class="top-50 translate-middle-y end-0 position-absolute material-symbols-outlined"> chevron_right</span>
+                                          </a> 
+                                      </li>
+                                      <li>
+                                          <a class="py-3 rounded-2 dropdown-item position-relative" href="#" id="dropdownMenuLink" data-bs-auto-close="outside" data-bs-toggle="dropdown">量化分析
+                                              <span class="top-50 translate-middle-y end-0 position-absolute material-symbols-outlined"> chevron_right</span>
+                                          </a> 
+                                      </li>
+          
+                                  </ul>
+                              </div>
+                          </li>
+                          <li>
+                              <a class="py-3 dropdown-item rounded-2  position-relative" href="#">攝影
+                                  <span class="top-50 translate-middle-y end-0 position-absolute material-symbols-outlined"> chevron_right</span>
+                              </a> 
+                          </li>
+                           <li>
+                                  <a class="py-3 dropdown-item rounded-2  position-relative" href="#">音樂
+                                      <span class="top-50 translate-middle-y end-0 position-absolute material-symbols-outlined"> chevron_right</span>
+                                  </a> 
+                              </li>
+                              <li>
+                                  <a class="py-3 dropdown-item rounded-2  position-relative" href="#">藝術
+                                      <span class="top-50 translate-middle-y end-0 position-absolute material-symbols-outlined"> chevron_right</span>
+                                  </a> 
+                              </li>
+                              <li>
+                                  <a class="py-3 dropdown-item rounded-2  position-relative" href="#">人文
+                                      <span class="top-50 translate-middle-y end-0 position-absolute material-symbols-outlined"> chevron_right</span>
+                                  </a> 
+                              </li>
+                              <li>
+                                  <a class="py-3 dropdown-item rounded-2  position-relative" href="#">行銷
+                                      <span class="top-50 translate-middle-y end-0 position-absolute material-symbols-outlined"> chevron_right</span>
+                                  </a> 
+                              </li>
+                              <li>
+                                  <a class="py-3 dropdown-item rounded-2  position-relative" href="#">投資理財
+                                      <span class="top-50 translate-middle-y end-0 position-absolute material-symbols-outlined"> chevron_right</span>
+                                  </a> 
+                              </li>
+                              <li>
+                                  <a class="py-3 dropdown-item rounded-2  position-relative" href="#">心靈成長
+                                      <span class="top-50 translate-middle-y end-0 position-absolute material-symbols-outlined"> chevron_right</span>
+                                  </a> 
+                              </li>
+                              <li>
+                                  <a class="py-3 dropdown-item rounded-2  position-relative" href="#">職場技能
+                                      <span class="top-50 translate-middle-y end-0 position-absolute material-symbols-outlined"> chevron_right</span>
+                                  </a> 
+                              </li>
+                              <li>
+                                  <a class="py-3 dropdown-item rounded-2  position-relative" href="#">生活品物
+                                      <span class="top-50 translate-middle-y end-0 position-absolute material-symbols-outlined"> chevron_right</span>
+                                  </a> 
+                              </li>
+                              <li>
+                                  <a class="py-3 dropdown-item rounded-2  position-relative" href="#">音樂
+                                      <span class="top-50 translate-middle-y end-0 position-absolute material-symbols-outlined"> chevron_right</span>
+                                  </a> 
+                              </li>
+      
+                              <li>
+                                  <a class="py-3 dropdown-item rounded-2  position-relative" href="#">人文
+                                      <span class="top-50 translate-middle-y end-0 position-absolute material-symbols-outlined"> chevron_right</span>
+                                  </a> 
+                              </li>
+                              <li>
+                                  <a class="py-3 dropdown-item rounded-2  position-relative" href="#">行銷
+                                      <span class="top-50 translate-middle-y end-0 position-absolute material-symbols-outlined"> chevron_right</span>
+                                  </a> 
+                              </li>
+                              <li>
+                                  <a class="py-3 dropdown-item rounded-2  position-relative" href="#">投資理財
+                                      <span class="top-50 translate-middle-y end-0 position-absolute material-symbols-outlined"> chevron_right</span>
+                                  </a> 
+                              </li>
+                              <li>
+                                  <a class="py-3 dropdown-item rounded-2  position-relative" href="#">心靈成長
+                                      <span class="top-50 translate-middle-y end-0 position-absolute material-symbols-outlined"> chevron_right</span>
+                                  </a> 
+                              </li>
+                              <li>
+                                  <a class="py-3 dropdown-item rounded-2  position-relative" href="#">職場技能
+                                      <span class="top-50 translate-middle-y end-0 position-absolute material-symbols-outlined"> chevron_right</span>
+                                  </a> 
+                              </li>
+                              <li>
+                                  <a class="py-3 dropdown-item rounded-2  position-relative" href="#">生活品物
+                                      <span class="top-50 translate-middle-y end-0 position-absolute material-symbols-outlined"> chevron_right</span>
+                                  </a> 
+                              </li>
+      
+                      </ul>
+
+                  </div>
+              </li>
+
+            </ul>
+
+            <form class="d-flex me-auto">
+                <div class="position-relative">
+                    <i class="position-absolute translate-middle-y bi bi-search"></i>
+                    <input class="form-control me-2" type="search" placeholder="搜尋各種音樂、數學、程式及設計課程">
+                    <button class="position-absolute top-50 translate-middle-y end-5 btn btn-sm btn-primary-100" type="button">搜尋</button>
+                </div>
+            </form>
+
+            <div>
+                <a href="#">
+                    <div class="position-relative me-4">
+                        <img class="object-fit-cover" width="24" height="24" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/icons/ic_notifications.png?raw=true" alt="">
+                        <span class="position-absolute top-0 start-100 translate-middle p-1 bg-primary-100  rounded-circle">
+                        </span>
+                    </div>
+                </a>
+                <a href="cart.html">
+                    <i class=" bi bi-cart4 fs-6"></i>
+                </a>
+                <a href="login.html" class="ms-4 btn btn-primary-100">登入 / 註冊</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+<!-- navbar-mobile----------------- -->
+      <nav class="navbar-mobile navbar navbar-light bg-light fixed-top d-block d-lg-none">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img width="125" height="20" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/logo.png?raw=true" alt="...">
+          </a>
+          <div>
+              <a href="#">
+                  <div class="position-relative me-4">
+                      <img class="object-fit-cover" width="24" height="24" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/icons/ic_notifications.png?raw=true" alt="">
+                      <span class="position-absolute top-0 start-100 translate-middle p-1 bg-primary-100  rounded-circle">
+                      </span>
+                  </div>
+              </a>
+              <a href="#"><i class="align-bottom bi bi-cart4 fs-6"></i></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">探索全部</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mb-13">
+                <li class="nav-item p-3 d-flex justify-content-between align-items-center">
+                  <a class="nav-link active" href="#">音樂 </a>
+                  <i class="bi bi-chevron-right"></i>
+                </li>
+                <li class="nav-item p-3 d-flex justify-content-between align-items-center">
+                  <a class="nav-link" href="#">攝影</a>
+                  <i class="bi bi-chevron-right"></i>
+                </li>
+                <li class="nav-item p-3 d-flex justify-content-between align-items-center bg-primary-100">
+                    <a href="#" class="nav-link text-white">程式</a>
+                    <i class="bi bi-chevron-right"></i>
+                </li>
+                <li class="nav-item p-3 d-flex justify-content-between align-items-center">
+                    <a href="#" class="nav-link">藝術</a>
+                    <i class="bi bi-chevron-right"></i>
+                </li>
+                <li class="nav-item p-3 d-flex justify-content-between align-items-center">
+                    <a href="#" class="nav-link">人文</a>
+                    <i class="bi bi-chevron-right"></i>
+                </li>
+                <li class="nav-item p-3 d-flex justify-content-between align-items-center">
+                    <a href="#" class="nav-link">行銷</a>
+                    <i class="bi bi-chevron-right"></i>
+                </li>
+                <li class="nav-item p-3 d-flex justify-content-between align-items-center">
+                    <a href="#" class="nav-link">生活品味</a>
+                    <i class="bi bi-chevron-right"></i>
+                </li>
+                <li class="nav-item p-3 d-flex justify-content-between align-items-center">
+                    <a href="#" class="nav-link">投資理財</a>
+                    <i class="bi bi-chevron-right"></i>
+                </li>
+                <li class="nav-item p-3 d-flex justify-content-between align-items-center">
+                    <a href="#" class="nav-link">心靈成長</a>
+                    <i class="bi bi-chevron-right"></i>
+                </li>
+                <li class="nav-item p-3 d-flex justify-content-between align-items-center">
+                    <a href="#" class="nav-link">職場技能</a>
+                    <i class="bi bi-chevron-right"></i>
+                </li>
+              </ul>
+              <a href="" class="fixed-bottom w-100 btn btn-primary-100">登入 / 註冊</a>
+         
+            </div>
+          </div>
+        </div>
+      </nav>
+</header>
+
+
+
+
+    <section class="py-11">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mb-lg-6 mb-4">
+                    <div class="btn-progress-bar d-lg-flex justify-content-end d-none">
+                        <p><i class="text-primary-100 bi bi-1-circle-fill"></i>確認訂單</p>
+                        <p class="position-relative"><i class="bi text-neutral-60 bi-2-circle-fill"></i>訂單資訊</p>
+                        <p class="position-relative"><i class="bi text-neutral-60 bi-3-circle-fill"></i>訂單完成</p>
+                    </div>
+                    <!-- progress-mobile -->
+                    <div class="btn-progress-bar d-lg-none d-flex justify-content-end">
+                        <p><i class="text-primary-100 bi bi-1-circle-fill"></i>確認訂單</p>
+                        <p class="position-relative"><i class="bi text-neutral-60 bi-2-circle-fill"></i></p>
+                        <p class="position-relative"><i class="bi text-neutral-60 bi-3-circle-fill"></i></p>
+                    </div>
+                </div>
+                <div class="col-lg-8 ">
+                    <div class="px-6 py-3 rounded-3 bg-white">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">全選</label>
+                        </div>
+                        <div class="row align-items-center d-lg-flex d-none">
+                            <div class="col-1">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="item1">
+                                </div>
+                            </div>
+
+                            <div class="col-7">
+                                <label class="form-check-label d-lg-flex d-block align-items-center py-lg-6" for="item1">
+                                    <img class="me-3" width="200" height="112" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/cart-1.png?raw=true" alt="">
+                                    <h2 class="fs-6">使用 HTML、CSS 開發一個網站</h2>
+                                </label>
+                            </div>
+               
+                            <div class="col-2 text-center">
+                                <span class="fw-bold">NT$ 1,200</span>
+                            </div>
+                            <div class="col-2 text-neutral-80 text-end">
+                                <a class="d-block" href="#">移至收藏</a>
+                                <a class="d-block" href="#">刪除</a>
+                            </div>
+
+                            <div class="col-1">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="item2">
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <label class="form-check-label d-flex align-items-center py-6" for="item2">
+                                    <img class="me-3" width="200" height="112" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/cart-2.png?raw=true" alt="">
+                                    <h5>一變應萬變：RWD 響應式網頁設計</h5>
+                                </label>
+                            </div>
+               
+                            <div class="col-2 text-center">
+                                <span class="fw-bold">NT$ 1,200</span>
+                            </div>
+                            <div class="col-2 text-neutral-80 text-end">
+                                <a class="d-block" href="#">移至收藏</a>
+                                <a class="d-block" href="#">刪除</a>
+                            </div>
+
+                            <div class="col-1">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="item3">
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <label class="form-check-label d-flex align-items-center py-6" for="item3">
+                                    <img class="me-3" width="200" height="112" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/cart-3.png?raw=true" alt="">
+                                    <h5>使用 jQuery 打造互動性網頁動畫效果</h5>
+                                </label>
+                            </div>
+               
+                            <div class="col-2 text-center">
+                                <span class="fw-bold">NT$ 1,200</span>
+                            </div>
+                            <div class="col-2 text-neutral-80 text-end">
+                                <a class="d-block" href="#">移至收藏</a>
+                                <a class="d-block" href="#">刪除</a>
+                            </div>
+
+                        </div>
+
+                        <div class="row d-lg-none d-flex">
+                            <div class="col-1">
+                                <div class="form-check pt-4">
+                                    <input class="form-check-input" type="checkbox" value="" id="mobile-item1">
+                                </div>
+                            </div>
+                            <div class="col-11">
+                                <div class="p-4">
+                                    <label class="form-check-label align-items-center" for="mobile-item1">
+                                        <img class="w-100 me-3" width="200" height="112" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/cart-1.png?raw=true" alt="">
+                                    </label>
+                    
+                                    <div class="mt-3 fs-7">
+                                        <h2 class="fs-7">使用 HTML、CSS 開發一個網站</h2>
+                                        <span class="fw-bold">NT$ 1,200</span>
+                                    </div>
+                                    <div class="text-neutral-80 justify-content-end fs-8 d-flex">
+                                        <a class="d-block me-7" href="#">移至收藏</a>
+                                        <a class="d-block" href="#">刪除</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-1">
+                                <div class="form-check pt-4">
+                                    <input class="form-check-input" type="checkbox" value="" id="mobile-item2">
+                                </div>
+                            </div>
+                            <div class="col-11">
+                                <div class="p-4">
+                                    <label class="form-check-label align-items-center" for="mobile-item2">
+                                        <img class="w-100 me-3" width="200" height="112" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/cart-2.png?raw=true" alt="">
+                                    </label>
+                    
+                                    <div class="mt-3 fs-7">
+                                        <h2 class="fs-7">一變應萬變：RWD 響應式網頁設計</h2>
+                                        <span class="fw-bold">NT$ 1,200</span>
+                                    </div>
+                                    <div class="text-neutral-80 justify-content-end d-flex fs-8">
+                                        <a class="me-7 d-block" href="#">移至收藏</a>
+                                        <a class="d-block" href="#">刪除</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-1">
+                                <div class="form-check pt-4">
+                                    <input class="form-check-input" type="checkbox" value="" id="mobile-item3">
+                                </div>
+                            </div>
+                            <div class="col-11">
+                                <div class="p-4">
+                                    <label class="form-check-label align-items-center" for="mobile-item3">
+                                        <img class="w-100 me-3" width="200" height="112" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/cart-3.png?raw=true" alt="">
+                                    </label>
+                    
+                                    <div class="mt-3 fs-7">
+                                        <h2 class="fs-7">使用 jQuery 打造互動性網頁動畫效果</h2>
+                                        <span class="fw-bold">NT$ 1,200</span>
+                                    </div>
+                                    <div class="text-neutral-80 d-flex justify-content-end fs-8">
+                                        <a class="d-block me-7" href="#">移至收藏</a>
+                                        <a class="d-block" href="#">刪除</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-4 d-lg-block d-none">
+                    <div class="py-6 px-4 call-action rounded-3 bg-white">
+                        <div class="border-1 border-bottom pb-6">
+                            <h5 class="text-neutral-80  pb-4 mb-6">訂單明細</h5>
+                            <div class="d-flex justify-content-between text-neutral-80">
+                                <small>2 項課程小計</small>
+                                <p>NT$ 3,600</p>
+                            </div>   
+                        </div>
+                        <div class="d-flex justify-content-between my-6">
+                            <small class="text-neutral-80">總計</small>
+                            <p class="fs-3 fw-bold">NT$ 3,600</p>
+                        </div>
+        
+                        <div>
+                            <button type="button" class="w-100 me-3 btn btn-primary-100">前往結帳</button>
+                            <small class="d-block text-neutral-80 mt-4">確認購買即表示您已審閱 Learning 所提供之購物相關條款，並同意條款內容。</small>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+  
+
+
+            <!-- callToAction-mobile Bill-information -->
+             <div class="fixed-bottom">
+                 <div class="d-lg-none d-block bg-white position-relative p-4">
+                     <div class="container">
+                         <div class="d-flex justify-content-between align-items-center">
+                             <div>
+                                 <small class="text-neutral-80 ">展開明細
+                                     <button type="button" id="billMobileBtn" class="billInfoBtn"><i class="bi bi-caret-up"></i> </button>
+                                 </small>
+                                 <span class="fs-6 fw-bold">NT$ 3,600</span>
+                             </div>
+                             <button type="button" class="btn btn-sm btn-primary-100">前往結帳</button>
+                         </div>
+                     </div>
+     
+
+                     <!-- bill-info-hidden -->
+                     <div class="bill-info-mobile position-absolute bottom-100 start-0 bg-white" id="infoHidden">
+                        <div class="py-4 bg-neutral-40">
+                            <div class="container d-flex justify-content-between">
+                                <p class="fs-8 fw-bold">訂單明細</p>
+                                <button class="billCloseBtn" type="button" id="billCloseBtn">X</button>
+                            </div>
+                         </div>
+                        <div class="container">
+        
+                             <div class="p-6">
+                                <div class="d-flex justify-content-between text-neutral-80 border-1 border-bottom py-4">
+                                    <small>2 項課程小計</small>
+                                    <p>NT$ 3,600</p>
+                                </div>   
+                                <div class="d-flex justify-content-between my-4">
+                                    <small class="text-neutral-80">總計</small>
+                                    <p class="fs-3 fw-bold">NT$ 3,600</p>
+                                </div>
+                                <p class="text-neutral-80 fs-8">確認購買即表示您已審閱 Learning 所提供之購物相關條款，並同意條款內容。</p>
+        
+        
+                             </div>
+                         </div>
+                        </div>
+                 </div>
+
+             </div>
+
+   
+
+
+
+    <footer class="footer py-lg-12 py-9 px-6 px-lg-0">
+    <div class="container">
+        <div class="d-lg-flex d-block justify-content-between mb-3">
+            <div class="mb-8">
+                <img width="200" height="32" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/logo-white.png?raw=true" alt="">
+            </div>
+            <ul class="d-lg-flex d-block list-unstyled">
+                <li class="fs-8 me-lg-7 me-0 mb-6 mb-lg-0 text-white"><a href="#">常見問題</a></li>
+                <li class="fs-8 me-lg-7 me-0 mb-6 mb-lg-0 text-white"><a href="#">關於我們</a></li>
+                <li class="fs-8 me-lg-7 me-0 mb-6 mb-lg-0 text-white"><a href="#">隱私權政策</a></li>
+                <li class="fs-8 text-white"><a href="#">使用者條款</a></li>
+            </ul>
+        </div>
+        <div class="d-lg-flex d-block justify-content-between align-items-center">
+                
+            <span  class="d-lg-block d-none fs-8 " style="color: #d4d4d4;">copyright © 2024 LEARNING 課程網站 All Rights Reserved.</span>
+
+            <div class="my-7 media-icon">
+                <a href="#"><i class="me-3 text-white fa-brands fa-line"></i></a>
+                <a href="#"><i class="me-3 fa-brands text-white fa-square-youtube"></i></a>
+                <a href="#"><i class="fa-brands  text-white fa-facebook"></i></a>
+            </div>
+            <span  class="d-block d-lg-none fs-8 " style="color: #d4d4d4;">copyright © 2024 LEARNING 課程網站 All Rights Reserved.</span>
+
+        </div>
+    </div>
+</footer>    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+
+
+  </body>
+</html>
