@@ -1,0 +1,224 @@
+
+.banner{
+  &-mobile img{
+    // max-width: 375px;
+    height: 400px;
+  }
+
+  &-slide{
+    flex-shrink: 0;
+  }
+
+  &-arrow-left,&-arrow-right{
+    border-radius: 12px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+
+
+  &-sombra::after{
+    content: '';
+    width: 57px;
+    height: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)); /* 白色，70% 透明度 */
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+  }
+
+
+  &-sombra::before{
+    content: '';
+    width: 57px;
+    height: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)); /* 白色，70% 透明度 */
+  
+    position: absolute;
+    top: 0;
+    right: 0%;
+    z-index: 10;
+  }
+
+
+  &-txt{
+    width: 563px;
+  }
+  &-txt-mobile{
+    width: 343px;
+  }
+  &-title{
+    width: 872px;
+    border-radius: 0 100px 0 80px;
+  }
+
+
+
+
+}
+
+
+
+// --------------------course
+
+.course{
+  &-card{
+    border-radius: 20px;
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,.12);
+    overflow: hidden;
+    @include mobile{
+      box-shadow: 0 25px 50px -12px inset rgba(0,0,0,.12);
+
+    }
+  }
+  position: relative;
+  &-decoration::before{
+    content: '';
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/deco/flower-2.png?raw=true');
+    display: block;
+    width: 560px;
+    height: 560px;
+    position: absolute;
+    top: 0;
+    left: -100px;
+    z-index: -1;
+    background-repeat: no-repeat;
+  }
+
+  &-btn-scroll-wrapper{
+    max-width: 100%;
+    overflow-y: scroll;
+    white-space: nowrap;
+  }
+
+}
+
+.carousel-indicators {
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 15%;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+}
+
+//----------------------popular
+.popular{
+  position: relative;
+  background: linear-gradient(to right, #F0F6FF 0%, #FFFFFF 100%);
+  &-title{
+    z-index: 1;
+  }
+  &-deco::before{
+    content: '';
+    position: absolute;
+    top: -23%;
+    left: -7%;
+    width: 60px;
+    height: 60px;
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/deco/flower-1.png?raw=true');
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  &-deco1::before{
+    content: '';
+    position: absolute;
+    top: 23%;
+    left: -17%;
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/deco/flower-3.png?raw=true');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 480px;
+    height: 480px;
+
+    @include mobile{
+      display: none;
+    }
+  }
+
+  &-arrow-left,&-arrow-right{
+    border-radius: 12px;
+  }
+
+  .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    content: '';
+  }
+  .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    content: '';
+  }
+
+}
+
+
+// categoria---------------
+.categoria{
+  &-icon{
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+}
+
+
+.teacher{
+  &-card{
+
+    margin-top: -80px;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,.12);
+    background-color: #fff;
+    margin-right: 32px;
+  }
+  &-img{
+    margin-left: 80px;
+    width: auto;
+  }
+  .card{
+    max-width: 416px;
+    position: relative;
+    background-color: transparent;
+  }
+  &-deco::before{
+    content: '';
+    position: absolute;
+    top: -43%;
+    left: -7%;
+    width: 60px;
+    height: 60px;
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/deco/flower-1.png?raw=true');
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  &-deco1{
+    content: '';
+    position: absolute;
+    top: 16%;
+    left: -24%;
+    width: 2000px;
+    height: 452px;
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/deco/line-1.png?raw=true');
+    background-repeat: no-repeat;
+    @include mobile{
+      display: none;
+    }
+  }
+  .carousel-indicators{
+    // bottom:;
+    top: 100%;
+    // background-color: #000;
+  }
+
+}
+
+
+
+
+
+

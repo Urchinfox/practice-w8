@@ -1,0 +1,19 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import './utils/variables';
+@import "../../node_modules/bootstrap";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+@import './utils/utility';
+@import './layout/header.scss';
+@import './layout/footer.scss';
+
+@import './helper/component';
+@import './helper/swiper';
+@import './pages/index.scss';
+@import './pages/teacher.scss';
+@import './pages/frontend.scss';
+@import './pages/program.scss'; 
+@import './pages/cart';
+@import './pages/login';
+//不知道是各個html個別載入css比較好 還是統一在這裡載入
+@import './utils/base';

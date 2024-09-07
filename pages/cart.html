@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cart</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  </head>
+
+  <body class="bg-neutral-10">
+    <%- include('./layout/header'); -%>
+    <section class="py-11">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mb-lg-6 mb-4">
+                    <div class="btn-progress-bar d-lg-flex justify-content-end d-none">
+                        <p><i class="text-primary-100 bi bi-1-circle-fill"></i>確認訂單</p>
+                        <p class="position-relative"><i class="bi text-neutral-60 bi-2-circle-fill"></i>訂單資訊</p>
+                        <p class="position-relative"><i class="bi text-neutral-60 bi-3-circle-fill"></i>訂單完成</p>
+                    </div>
+                    <!-- progress-mobile -->
+                    <div class="btn-progress-bar d-lg-none d-flex justify-content-end">
+                        <p><i class="text-primary-100 bi bi-1-circle-fill"></i>確認訂單</p>
+                        <p class="position-relative"><i class="bi text-neutral-60 bi-2-circle-fill"></i></p>
+                        <p class="position-relative"><i class="bi text-neutral-60 bi-3-circle-fill"></i></p>
+                    </div>
+                </div>
+                <div class="col-lg-8 ">
+                    <div class="px-6 py-3 rounded-3 bg-white">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">全選</label>
+                        </div>
+                        <div class="row align-items-center d-lg-flex d-none">
+                            <div class="col-1">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="item1">
+                                </div>
+                            </div>
+
+                            <div class="col-7">
+                                <label class="form-check-label d-lg-flex d-block align-items-center py-lg-6" for="item1">
+                                    <img class="me-3" width="200" height="112" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/cart-1.png?raw=true" alt="">
+                                    <h2 class="fs-6">使用 HTML、CSS 開發一個網站</h2>
+                                </label>
+                            </div>
+               
+                            <div class="col-2 text-center">
+                                <span class="fw-bold">NT$ 1,200</span>
+                            </div>
+                            <div class="col-2 text-neutral-80 text-end">
+                                <a class="d-block" href="#">移至收藏</a>
+                                <a class="d-block" href="#">刪除</a>
+                            </div>
+
+                            <div class="col-1">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="item2">
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <label class="form-check-label d-flex align-items-center py-6" for="item2">
+                                    <img class="me-3" width="200" height="112" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/cart-2.png?raw=true" alt="">
+                                    <h5>一變應萬變：RWD 響應式網頁設計</h5>
+                                </label>
+                            </div>
+               
+                            <div class="col-2 text-center">
+                                <span class="fw-bold">NT$ 1,200</span>
+                            </div>
+                            <div class="col-2 text-neutral-80 text-end">
+                                <a class="d-block" href="#">移至收藏</a>
+                                <a class="d-block" href="#">刪除</a>
+                            </div>
+
+                            <div class="col-1">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="item3">
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <label class="form-check-label d-flex align-items-center py-6" for="item3">
+                                    <img class="me-3" width="200" height="112" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/cart-3.png?raw=true" alt="">
+                                    <h5>使用 jQuery 打造互動性網頁動畫效果</h5>
+                                </label>
+                            </div>
+               
+                            <div class="col-2 text-center">
+                                <span class="fw-bold">NT$ 1,200</span>
+                            </div>
+                            <div class="col-2 text-neutral-80 text-end">
+                                <a class="d-block" href="#">移至收藏</a>
+                                <a class="d-block" href="#">刪除</a>
+                            </div>
+
+                        </div>
+
+                        <div class="row d-lg-none d-flex">
+                            <div class="col-1">
+                                <div class="form-check pt-4">
+                                    <input class="form-check-input" type="checkbox" value="" id="mobile-item1">
+                                </div>
+                            </div>
+                            <div class="col-11">
+                                <div class="p-4">
+                                    <label class="form-check-label align-items-center" for="mobile-item1">
+                                        <img class="w-100 me-3" width="200" height="112" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/cart-1.png?raw=true" alt="">
+                                    </label>
+                    
+                                    <div class="mt-3 fs-7">
+                                        <h2 class="fs-7">使用 HTML、CSS 開發一個網站</h2>
+                                        <span class="fw-bold">NT$ 1,200</span>
+                                    </div>
+                                    <div class="text-neutral-80 justify-content-end fs-8 d-flex">
+                                        <a class="d-block me-7" href="#">移至收藏</a>
+                                        <a class="d-block" href="#">刪除</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-1">
+                                <div class="form-check pt-4">
+                                    <input class="form-check-input" type="checkbox" value="" id="mobile-item2">
+                                </div>
+                            </div>
+                            <div class="col-11">
+                                <div class="p-4">
+                                    <label class="form-check-label align-items-center" for="mobile-item2">
+                                        <img class="w-100 me-3" width="200" height="112" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/cart-2.png?raw=true" alt="">
+                                    </label>
+                    
+                                    <div class="mt-3 fs-7">
+                                        <h2 class="fs-7">一變應萬變：RWD 響應式網頁設計</h2>
+                                        <span class="fw-bold">NT$ 1,200</span>
+                                    </div>
+                                    <div class="text-neutral-80 justify-content-end d-flex fs-8">
+                                        <a class="me-7 d-block" href="#">移至收藏</a>
+                                        <a class="d-block" href="#">刪除</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-1">
+                                <div class="form-check pt-4">
+                                    <input class="form-check-input" type="checkbox" value="" id="mobile-item3">
+                                </div>
+                            </div>
+                            <div class="col-11">
+                                <div class="p-4">
+                                    <label class="form-check-label align-items-center" for="mobile-item3">
+                                        <img class="w-100 me-3" width="200" height="112" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/cart-3.png?raw=true" alt="">
+                                    </label>
+                    
+                                    <div class="mt-3 fs-7">
+                                        <h2 class="fs-7">使用 jQuery 打造互動性網頁動畫效果</h2>
+                                        <span class="fw-bold">NT$ 1,200</span>
+                                    </div>
+                                    <div class="text-neutral-80 d-flex justify-content-end fs-8">
+                                        <a class="d-block me-7" href="#">移至收藏</a>
+                                        <a class="d-block" href="#">刪除</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-4 d-lg-block d-none">
+                    <div class="py-6 px-4 call-action rounded-3 bg-white">
+                        <div class="border-1 border-bottom pb-6">
+                            <h5 class="text-neutral-80  pb-4 mb-6">訂單明細</h5>
+                            <div class="d-flex justify-content-between text-neutral-80">
+                                <small>2 項課程小計</small>
+                                <p>NT$ 3,600</p>
+                            </div>   
+                        </div>
+                        <div class="d-flex justify-content-between my-6">
+                            <small class="text-neutral-80">總計</small>
+                            <p class="fs-3 fw-bold">NT$ 3,600</p>
+                        </div>
+        
+                        <div>
+                            <button type="button" class="w-100 me-3 btn btn-primary-100">前往結帳</button>
+                            <small class="d-block text-neutral-80 mt-4">確認購買即表示您已審閱 Learning 所提供之購物相關條款，並同意條款內容。</small>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+  
+
+
+            <!-- callToAction-mobile Bill-information -->
+             <div class="fixed-bottom">
+                 <div class="d-lg-none d-block bg-white position-relative p-4">
+                     <div class="container">
+                         <div class="d-flex justify-content-between align-items-center">
+                             <div>
+                                 <small class="text-neutral-80 ">展開明細
+                                     <button type="button" id="billMobileBtn" class="billInfoBtn"><i class="bi bi-caret-up"></i> </button>
+                                 </small>
+                                 <span class="fs-6 fw-bold">NT$ 3,600</span>
+                             </div>
+                             <button type="button" class="btn btn-sm btn-primary-100">前往結帳</button>
+                         </div>
+                     </div>
+     
+
+                     <!-- bill-info-hidden -->
+                     <div class="bill-info-mobile position-absolute bottom-100 start-0 bg-white" id="infoHidden">
+                        <div class="py-4 bg-neutral-40">
+                            <div class="container d-flex justify-content-between">
+                                <p class="fs-8 fw-bold">訂單明細</p>
+                                <button class="billCloseBtn" type="button" id="billCloseBtn">X</button>
+                            </div>
+                         </div>
+                        <div class="container">
+        
+                             <div class="p-6">
+                                <div class="d-flex justify-content-between text-neutral-80 border-1 border-bottom py-4">
+                                    <small>2 項課程小計</small>
+                                    <p>NT$ 3,600</p>
+                                </div>   
+                                <div class="d-flex justify-content-between my-4">
+                                    <small class="text-neutral-80">總計</small>
+                                    <p class="fs-3 fw-bold">NT$ 3,600</p>
+                                </div>
+                                <p class="text-neutral-80 fs-8">確認購買即表示您已審閱 Learning 所提供之購物相關條款，並同意條款內容。</p>
+        
+        
+                             </div>
+                         </div>
+                        </div>
+                 </div>
+
+             </div>
+
+   
+
+
+
+    <%- include('./layout/footer'); -%>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="../main.js"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,23 @@
+
+
+.teacher-banner{
+    .media-icon .fa-line,.media-icon .fa-square-youtube,.media-icon .fa-facebook{
+        padding: 12px;
+        border-radius: 50%;
+        border: 1px solid #000; 
+    }
+
+    &-img{
+        margin-top: -25%;
+        width: 200px;
+        height: 200px;
+        @include mobile{
+            width: 60px;
+            height: 60px;
+            margin-top: -8%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+    }
+}

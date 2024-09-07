@@ -1,0 +1,114 @@
+.custom-btn-tag{
+    padding: 12px 16px;
+    border-radius: 12px;
+    background-color: $neutral-40;
+    border: none;    
+    color: $neutral-80;
+}
+.custom-btn-tag:hover{
+    background-color: $primary-100;
+    color: white;
+}
+
+
+.custom-btn-tag-1{
+    background-color: $neutral-40;
+    color: $neutral-80;
+    padding: 4px 12px;
+    border-radius: 100px;
+    border: none;
+}
+
+.accordion-btn{
+    padding: 6px 12px;
+    background: $neutral-80;
+    border-radius: 4px;
+    color: white;
+    @include mobile{
+        padding: 0px 5px;
+
+    }
+}
+
+.accordion-tag{
+    padding: 4px 8px;
+    background-color: $primary-100;
+    color: white;
+    border-radius: 8px;
+}
+
+.frontend-cart{
+    padding: 8px 16px;
+}
+
+.frontend-cart:hover{
+    background-color: $primary-100;
+    color: white;
+}
+
+
+.custom-pagination a{
+       
+    display: flex;
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+
+    @include mobile{
+        width: 32px;
+        height: 32px;
+    }
+
+  }
+
+  .custom-pagination li{
+    border-radius: 8px;
+    position: relative;
+
+    margin-right: 8px;
+  }
+
+  .custom-pagination li:hover{
+    background-color: $primary-100;
+    color: white;
+  }
+
+  .custom-pagination li:nth-child(-n+2){
+    background-color: $neutral-40;
+  }
+
+  .media-icon .fa-line,.media-icon .fa-square-youtube,.media-icon .fa-facebook{
+    padding: 12px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    font-size: 1.5rem;
+}
+
+.btn-progress-bar p{
+    color: $neutral-80;
+    .bi{
+        margin-right: 8px;
+    }
+    .bi-2-circle-fill::after,.bi-3-circle-fill::after{
+        content: '';
+        width: 40px;
+        height: 1px;
+        background-color: $neutral-60;
+        position: absolute;
+        transform: translateY(-50%);
+
+        top: 50%;
+        left: -60%;
+        @include mobile{
+            left: -240%;;
+        }
+    }
+}
+
+.btn-progress-bar p:not(:last-child) {
+    margin-right: 72px;
+}
+
+
+

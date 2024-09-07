@@ -1,0 +1,190 @@
+
+
+
+.program-navbar{
+    z-index: 0;
+    &-slide-ul{
+        max-width:1232px;
+    }
+    &-slide-ul li{
+        flex-shrink: 0;
+        margin-right: 8px;
+    }
+    &-slide-li a:hover{
+        background-color: $primary-100;
+        color: white;
+    }
+
+    &-deco1::after{
+        content: '';
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 3%;
+        right: 23%;
+        background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/deco/polygon-2.png?raw=true');
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include mobile{
+            display: none;
+        }
+
+    }
+    &-deco2::after{
+        content: '';
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 17%;
+        left: 1%;
+        background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/deco/polygon-2.png?raw=true');
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 0;
+
+    }
+    &-deco3::after{
+        content: '';
+        width: 560px;
+        height: 560px;
+        position: absolute;
+        top: -20%;
+        left: -5%;
+        background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/deco/flower-2.png?raw=true');
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        @include mobile{
+            width: 240px;
+            height: 240px;
+            top: 24%;
+            left: 58%;
+        }
+   
+
+    }
+    &-deco4::after{
+        content: '';
+        width: 560px;
+        height: 560px;
+        position: absolute;
+        top: 22%;
+        right: 0;
+        background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/deco/flower-2.png?raw=true');
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include mobile{
+            display: none;
+        }
+
+    }
+}
+
+.program-popular{
+    .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+        content: '';
+      }
+      .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+        content: '';
+      }
+
+
+      .nav-link.active{
+        color: $primary-100;
+        font-weight: bold;
+    }
+    .nav-link{
+        color: $neutral-80;
+    }
+
+    &-theme-slide ul{
+        max-width: 1296px;
+        @include mobile{
+            max-width: 100%;
+        }
+    }
+
+    &-theme-slide li{
+        border-radius: 12px;
+        margin-right: 24px;
+        padding: 24px;
+        flex-shrink: 0;
+    }
+    &-theme-slide-pagination span:first-child{
+        background-color: $primary-100;
+        width: 24px;
+        border-radius: 100px;
+    }
+
+    &-theme-slide-pagination span{
+        // display: block;
+        width: 8px;
+        height: 8px;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        display: block;
+        background-color: #ECECEC;
+        margin-right: 4px;
+    }
+
+    &-course ul{
+        @include mobile{
+            max-width: 100%;
+
+        }
+    }
+
+    &-course .course-card{
+        max-width: 306px;
+    }
+
+    &-course li{
+        flex-shrink: 0;
+        margin-right: 16px;
+    }
+}
+
+
+.program-teacher{
+    &-card{
+        border-radius: 12px;
+        // max-width: 306px;
+    }
+}
+
+.program-related{
+
+    &-title{
+        @include mobile{
+            font-size: 16px;
+        }
+    }
+    .course-card{
+        box-shadow: 0 25px 50px -12px rgba(0,0,0,.12);
+        overflow: hidden;
+        @include mobile{
+          box-shadow: none;
+          border: none;
+          border-radius: 0;
+        }
+      }
+      .course-card h2{
+        @include mobile{
+            font-size: 16px;
+        }
+      }
+      .course-card-img{
+        @include mobile{
+            max-width: 100px;
+        }
+      }
+      
+      .course-card-img img{
+        @include mobile{
+            border-radius: 12px;
+            width: auto;
+            height: 100px;
+        }
+      }
+
+}

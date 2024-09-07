@@ -1,0 +1,34 @@
+
+.google-btn::before{
+    content: '';
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/icons/ic_google.png?raw=true');
+}
+.google-btn::before,.apple-btn::before,.facebook-btn::before{
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%);
+}
+
+.facebook-btn::before{
+    content: '';
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/icons/ic_facebook.png?raw=true');
+}
+
+.apple-btn::before{
+    content: '';
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/icons/ic_apple.png?raw=true');
+}
+
+.login{
+    &-img{
+
+        background-position: center;
+    }
+ 
+}
+
